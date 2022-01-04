@@ -1,6 +1,7 @@
 Como usar o GIT (Comandos)
 
 ***é bom colocar um repositório com as instruções de como funciona cada projeto***
+
 ***.gitignore => colocar nome dos arquivos, pastas que não devem ser adicionado ao repositório, antes de serem Adicionados***
 
 git status                              -> verifica se há alterações e quais arquivos fazem parte do git
@@ -24,3 +25,5 @@ git checkout HEAD -- nome.arquivo       -> volta o arquivo q foi modificado. ant
 git remote                              -> Mostra repositório remoto
 git remote -v                           -> mostra o fetch e o push 
 git push -u 'rep.remoto' 'branch'       -> leva o conteudo do meu repositorio local p remoto 
+
+git revert --no-edit                    -> volta commit sem apagar os commits a frente
