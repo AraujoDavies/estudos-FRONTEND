@@ -1,7 +1,7 @@
 Como usar o GIT (Comandos)
 
 ***é bom colocar um repositório com as instruções de como funciona cada projeto***
-***.gitignore => colocar nome dos arquivos, pastas que não devem ser adicionado ao repositório***
+***.gitignore => colocar nome dos arquivos, pastas que não devem ser adicionado ao repositório, antes de serem Adicionados***
 
 git status                              -> verifica se há alterações e quais arquivos fazem parte do git
 git init                                -> cria um repositório - com ou sem arquivos da pasta
