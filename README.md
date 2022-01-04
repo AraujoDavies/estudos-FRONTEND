@@ -26,4 +26,4 @@ git remote                              -> Mostra repositório remoto
 git remote -v                           -> mostra o fetch e o push 
 git push -u 'rep.remoto' 'branch'       -> leva o conteudo do meu repositorio local p remoto 
 
-git revert --no-edit                    -> volta commit sem apagar os commits a frente
+git revert --no-edit 'idcommit'         -> volta commit sem apagar os commits a frente
