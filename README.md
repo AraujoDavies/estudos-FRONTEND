@@ -15,15 +15,17 @@ git reset
         --soft  "commit id"             -> volta no tempo mantendo as alterações anteriores ao commit (mais utilizado)
 
 git branch                              -> mostra qual ramificação estamos fazendo as alterações
-git branch nomedanovabranch             -> cria nova branch
-git checkout nomebranch                 -> navega entre as branchs
+git branch 'nomedanovabranch'           -> cria nova branch
+git checkout 'nomebranch'               -> navega entre as branchs
 
 git commit -am "description"            -> add arquivos e commita, atalho para evitar o add
 git diff                                -> mostra as modificações feitas dentro do arquivo
-git checkout HEAD -- nome.arquivo       -> volta o arquivo q foi modificado. antes do commit
+git checkout HEAD -- 'nome.arquivo'     -> volta o arquivo q foi modificado. antes do commit
 
 git remote                              -> Mostra repositório remoto
 git remote -v                           -> mostra o fetch e o push 
 git push -u 'rep.remoto' 'branch'       -> leva o conteudo do meu repositorio local p remoto 
+o -u é necessário somente na 1°vez
 
 git revert --no-edit 'idcommit'         -> volta commit sem apagar os commits a frente
+git push 'rep.remoto' :'branch'         -> sem o : ele cria | com o : ele apaga o branch
