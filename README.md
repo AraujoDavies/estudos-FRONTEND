@@ -32,3 +32,8 @@ git push 'rep.remoto' :'branch'         -> sem o : ele cria | com o : ele apaga 
 
 git pull 'rep.remoto' 'branch'          -> puxa as alterações do repositório remoto
         (antes de fazer o push é bom fazer o pull para evitar conflitos) ;)
+
+git clone 'URL'                         -> faz um clone de um repositorio remoto, porém não consigo modificar
+        (a não ser q meu pc esteja configurado para isso)
+
+***para contribuir com outros projetos faça um Fork e depois um Pull Request***
