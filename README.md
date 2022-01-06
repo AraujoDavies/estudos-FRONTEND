@@ -29,7 +29,6 @@ o -u é necessário somente na 1°vez
 
 git revert --no-edit 'idcommit'         -> volta commit sem apagar os commits a frente
 git push 'rep.remoto' :'branch'         -> sem o : ele cria | com o : ele apaga o branch
-git branch -D 'branch'                  -> apaga branch local
 
 git pull 'rep.remoto' 'branch'          -> puxa as alterações do repositório remoto
-        (antes de fazer o push é bom fazer o pull para evitar conflitos)
+        (antes de fazer o push é bom fazer o pull para evitar conflitos) ;)
