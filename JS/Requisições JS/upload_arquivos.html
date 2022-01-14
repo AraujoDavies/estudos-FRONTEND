@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" id="arquivos"> <!--multiple se quiser fazer upload de N arquivos -->
+
+    <button onclick=fazUpload()> Enviar </button>
+
+    <script>
+        async function fazUpload(){
+            let arquivo = document.querySelector('#arquivos').files[0]
+            
+            let body = new FormData(); /* classe construtora de elementos */
+            body.append('title', 'Imagem do jogador');
+            body.append('Arquivo: ', arquivo);
+            
+            let Requisicao = await fetch ('https://www.meusitetopzika.org.br', {
+                method: 'POST',
+                body: body, 
+                Headers:{ 
+                    'Content-Type': 'multipart/form-data'
+                }
+            })    
+            /*vai dar erro pq a URL do fetch não é valida*/
+        }
+
+    </script>
+</body>
+</html>

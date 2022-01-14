@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" id="arquivo">
+
+    <button onclick= upload()> Fazer Upload </button>
+
+    <div id="area"> </div>
+
+    <script>
+        function upload(){ 
+            
+            let inputImagem = document.querySelector('#arquivo').files[0]
+
+            let conteudoImg = document.createElement('img');
+            conteudoImg.src = URL.createObjectURL (inputImagem) /*Transforma um Arquivo Objeto em URL*/;
+            conteudoImg.width = 200;
+
+            document.getElementById('area').innerHTML = conteudoImg;
+
+           /* CÓDIGO DA AULA:
+            let inputImagem = document.querySelector('#arquivo').files[0]
+
+            let conteudoImg = document.createElement('img');
+            conteudoImg.src = URL.createObjectURL (inputImagem);
+            conteudoImg.width = 200;
+
+            document.getElementById('area').appendChild(conteudoImg);
+            */
+        }
+    </script>
+
+</body>
+</html>

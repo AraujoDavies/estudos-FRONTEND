@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .video{
+            width: 100%;
+            margin: auto;
+            float:left;
+            max-width: 720px;
+        }
+        .area-video{
+            position: relative;
+            padding: 0px 0px 56%; /*esse 56% é a proporção da resolução do video 720/1280=56,25% */
+        }
+        .area-video iframe{
+            position: absolute; 
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;;
+        }
+        .tagvideo{
+            width: 700px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="video">
+        <h2>Incorporado e responsivo</h2>
+        <div class="area-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uFIMDX8AUa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div> <br>
+
+    <div class="tagvideo">
+        <h2>TAG Video</h2>
+        <video width="720px" autoplay controls>
+            <source src="gol de falta 1.mp4" type="video/mp4">
+        </video>
+    </div>
+</body>
+</html>

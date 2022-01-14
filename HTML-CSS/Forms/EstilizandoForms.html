@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 20px;
+
+        }
+
+        input[type=text], textarea, select{
+            margin-top: 5px;
+            width: 400px;
+            outline: none;
+            padding: 10px;
+            font-size: 20px;
+            resize: none;
+        }
+
+        select{
+            text-align: center;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        select{
+            font-size: 14px;
+            padding: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>Área de Cadastro</h2>
+    <form action="">
+        <label>
+            Seu nome:<br>
+            <input type="text">
+        </label>
+
+        <label>
+            Descrição:<br>
+            <textarea name="" id="" ></textarea>
+        </label>
+
+        <label>
+            Categoria: <br>
+            <select name="categoria">
+                <option value="c1">Cat 1</option>
+                <option value="c2">Cat 2</option>
+                <option value="c3">Cat 3</option>
+            </select>
+        </label>
+
+        <label class="checkbox">
+            <input type="checkbox"> Declaro que li e aceito <a href="#">os termos</a> 
+        </label>
+
+        <button> Fazer cadastro. </button>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.texto{
+    width: 300px;
+    height: 900px;
+    overflow: auto; /* cria scroll para comportar o conteúdo, se necessário*/
+    background-color: rgb(238, 238, 238);
+    padding: 20px;
+}
+
+.scrollbtn{
+    width: 35px;
+    height: 35px;
+    background-color: blue;
+    position: fixed;
+    border-radius: 50%;
+    cursor: pointer;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    display: none;
+}
+
+.dpblock{
+    display: block;
+}

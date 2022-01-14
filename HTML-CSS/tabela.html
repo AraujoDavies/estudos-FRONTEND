@@ -1,0 +1,89 @@
+<!DOCTYPE html> <!-- usar os recursos mais atuais do HTML5-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th, td{
+            padding: 5px;
+        }
+
+        td{
+            border-bottom: 1px solid;
+        }
+        tbody tr:hover{
+            background-color: black;
+            color: white;
+        }
+
+        thead{
+            background-color: rgb(236, 118, 118);
+        }
+
+        table{
+            font-size: 20px;
+            text-align: center;
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        tbody tr:nth-child(even){
+            background-color:burlywood;
+        }
+
+        tbody tr:nth-child(even):hover{
+            background-color: black;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>item 1</th>
+                <th>item 2</th>
+                <th>item 3</th>
+                <th>item 4</th>
+            </tr>
+        </thead>
+    
+        <tbody>
+            <tr>
+                <td>...1</td>
+                <td>...2</td>
+                <td>...3</td>
+                <td>...4</td>
+            </tr>
+            <tr>
+                <td>...1</td>
+                <td>...2</td>
+                <td>...3</td>
+                <td>...4</td>
+            </tr>
+            <tr>
+                <td>...1</td>
+                <td>...2</td>
+                <td>...3</td>
+                <td>...4</td>
+            </tr>
+            <tr>
+                <td>...1</td>
+                <td>...2</td>
+                <td>...3</td>
+                <td>...4</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <br><br>
+    <button> <a href="Form-Inputs.html">Forms maldito!!</a> </button>
+    
+</body>
+</html>

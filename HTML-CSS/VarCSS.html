@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --bg-cor: rgb(126, 126, 126);
+            --pcor: rgb(3, 21, 124);
+            --bg-div: rgb(255, 255, 255);
+        }
+
+        body{
+            background-color: var(--bg-cor);
+        }
+        div{
+            background-color: var(--bg-div);
+            color: var(--pcor);
+            margin:20px;
+        }
+        /*em telas menores basta trocar a variável */
+        @media (max-width:500px){
+            :root{
+            --bg-cor: rgb(255, 255, 255);
+            --pcor: rgb(126, 126, 126);
+            --bg-div: rgb(3, 21, 124);
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div> olá </div>
+    <div> olá </div>
+    <div> olá </div>
+    <div> olá </div>
+</body>
+</html>

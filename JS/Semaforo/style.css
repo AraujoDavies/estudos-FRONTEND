@@ -1,0 +1,58 @@
+/*
+#exemplo{
+    width: 150px;
+    height: 150px;
+    border: solid #ccc 1px;
+    margin-bottom: 5px;
+}
+
+.verde{
+    background-color: greenyellow;
+}
+
+.vermelho{
+    background-color: red;
+}
+
+.azul{
+    background-color: blue;
+}
+*/
+
+.semaforo1,
+.semaforo2,
+.semaforo3 {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: black solid 1px;
+    background-color: honeydew;
+}
+
+.vermelho{
+    background-color: red;
+}
+
+.laranja{
+    background-color: orange;
+}
+
+.verde{
+    background-color: greenyellow;
+}
+
+.opacity{
+    opacity: 0.4;
+}
+
+.preto{
+    background-color: black;
+    color: white;
+    
+}
+
+.white{
+    border: solid black 1px;
+    color: black;
+    background-color: white;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title>
+    <style>
+        .picsrc img{
+            width: 600px;
+            object-fit: cover; /* brinque*/
+            height: 200px;
+        }
+
+        .max img{
+            width: max(50%, 300px) /*vai utilizar o maior*/
+            /* Se a tela ter +601px usará 50% do espaço(valor relativo)*/
+            /* Se a tela ter -599px usará os 300px(valor absoluto)*/
+        }
+
+        .min img{
+            width: min(50%, 300px) /*usará a menor medida*/
+            /* Se a tela ter +601px usará 300px(valor absoluto)*/
+            /* Se a tela ter -599px usará os 50% do espaço(valor relativo)*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Usando Picture + Source <u>(Adaptativa)</u></h2>
+        <picture class=picsrc>
+            <source media="(min-width: 650px)" srcset="img1.png">
+            <source media="(min-width: 450px)" srcset="img2.png">
+            <img src="img3.png">
+        </picture>
+    </div>
+
+    <div class="max">
+        <h2>Usando Max no CSS <u>(Responsiva)</u></h2>
+        <img src="img1.png" class="max" alt="Logo da Fundação">
+    </div>
+
+    <div class="min">
+        <h2>Usando Min no CSS <u>(Responsiva)</u></h2>
+        <img src="img1.png" class="min" alt="Logo da Fundação">
+    </div>
+
+</body>
+</html>

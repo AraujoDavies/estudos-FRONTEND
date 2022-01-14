@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick=exibir()> Fazer Requisição</button>
+
+    <div id="id1" style="padding: 10px"></div>
+    <div id="id2"> </div>
+
+    
+    <script>
+            function exibir(){
+                document.getElementById('id1').innerHTML = 'Carregando...'
+
+                fetch('https://jsonplaceholder.typicode.com/users') /* 'url' */
+
+                    .then(function(response){
+                        return response.json()
+                    })
+                    .then(function (json){
+                        document.getElementById('id1').innerHTML = json.length +' Users';
+                        
+                        exibirHTML(json);
+                        
+                    })
+                    .catch(function(error){
+                        document.getElementById('id1').innerHTML = 'Error';
+                    })
+            }
+
+            function exibirHTML(lista){
+                let html = console.log(lista);
+                
+                for (let i = 0 ; i < lista.length ; i++ ) {
+                    html += '<h2> ID: '+ lista[i].id +'</h2>'
+                    html += '<p>'+ lista[i].name +'</p> <hr>' ;
+                }
+                
+                document.getElementById('id2').innerHTML = html;
+
+            }
+    </script>
+</body>
+</html>

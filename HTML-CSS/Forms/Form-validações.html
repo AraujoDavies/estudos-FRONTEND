@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        legend{
+            font-size: 30px;
+        }
+        input, fieldset{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="XIT.php" method="get" enctype="multipart/form-data"> 
+        <!--se tem UPLOAD deve ter ENCTYPE-->
+        <!-- multipart/form-data pq ele envia os dados um por um para o BD-->
+        
+        <input type="hidden" name="Atualizar" value="ID155"> <!--envia escondido-->
+        <fieldset>
+            <legend> Dados: </legend>
+            <label>
+                Usuário:<br> <input type="text" minlength="3" maxlength="6" >
+            </label><br> <!-- required = campo obrigatório-->
+
+            <label>
+                idade do usuário:<br> <input type="number" max="120" min="12">
+            </label><br>
+
+            <label>
+                Digite seu email:<br> <input type="email" required title="EMAIL" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
+            </label><br> <!-- expressões regulares para e-mail-->
+            <label>
+                quando vai começar a estudar ?<br> <input type="date" min="2021-11-19">
+            </label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend> Upload: </legend>
+            <label>
+                Foto: <br> <input type="file" name="foto" accept="image/*" > <!--Accept pré seleciona-->
+            </label><br> 
+
+            <label>
+                Anexo: <br> <input type="file" name="anexo" accept="application/pdf">
+            </label><br>
+
+        </fieldset>
+        <button>Enviar</button>
+    </form>
+</body>
+</html>

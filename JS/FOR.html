@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch case</title>
+</head>
+<body>
+    <div class="a10"></div>
+    
+    <div class="array"></div>
+
+    <script>
+        let uma10 = '';
+
+        for (let i = 1; i <= 10; i++){
+            uma10 = uma10 + i + '<br>';
+        }
+
+        document.querySelector('.a10').innerHTML = uma10; /*escreve de 1 a 10 na tela*/
+
+/*-------------------------------------------------------------------------------------------------------*/
+        
+        let pratos = ['Lasanha', 'Strogonoff', 'frango a milanesa', 'Feijoada']
+
+        html = "<h2>pratos: </h2> <ul>";
+        for (let i in pratos){
+            html += "<li>" + pratos[i] + "</li>";
+        }
+        html += "<ul>";
+
+        document.querySelector('.array').innerHTML = html; /* cria uma lista com os pratos do array */
+    </script>
+</body>
+</html>
