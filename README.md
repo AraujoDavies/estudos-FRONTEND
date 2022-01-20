@@ -35,5 +35,8 @@ git pull 'rep.remoto' 'branch'          -> puxa as alterações do repositório 
 
 git clone 'URL'                         -> faz um clone de um repositorio remoto, porém não consigo modificar
         (a não ser q meu pc esteja configurado para isso)
+        
+git clean -n                            -> mostra arquivos que podem ser deletados (untracked)
+git clean -f                            -> deleta arquivos untracked
 
 ***para contribuir com outros projetos faça um Fork e depois um Pull Request***
