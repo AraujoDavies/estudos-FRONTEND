@@ -16,6 +16,7 @@ git reset
 
 git branch                              -> mostra qual ramificação estamos fazendo as alterações
 git branch 'nomedanovabranch'           -> cria nova branch
+git branch -d 'nomebranch'              -> remover uma branch
 git checkout 'nomebranch'               -> navega entre as branchs
 
 git commit -am "description"            -> add arquivos e commita, atalho para evitar o add
