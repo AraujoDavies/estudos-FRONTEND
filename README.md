@@ -1,6 +1,6 @@
 Como usar o GIT (Comandos)
 
-***é bom colocar um repositório com as instruções de como funciona cada projeto***
+***é bom colocar um README no repositório com as instruções de como funciona cada projeto***
 
 ***.gitignore => colocar nome dos arquivos, pastas que não devem ser adicionado ao repositório, antes de serem Adicionados***
 
