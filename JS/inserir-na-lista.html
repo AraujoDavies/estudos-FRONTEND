@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inserir item na lista</title>
+</head>
+<body>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <button onclick="inserir()"> Inserir </button>
+
+    <script>
+function inserir (){
+    let item = prompt("insira Algo na lista:");
+
+    let lista = document.querySelector('ul').innerHTML;
+
+    lista += "<li>"+item+"</li>";
+
+    document.querySelector('ul').innerHTML = lista;
+}
+    </script>
+</body>
+</html>
