@@ -24,7 +24,8 @@ git diff                                -> mostra as modificações feitas dentr
 git checkout HEAD -- 'nome.arquivo'     -> volta o arquivo q foi modificado. antes do commit
 
 git remote                              -> Mostra repositório remoto
-git remote -v                           -> mostra o fetch e o push 
+git remote -v                           -> mostra o fetch e o push
+git remote remove 'branch'              -> remove rep. remoto
 git push -u 'rep.remoto' 'branch'       -> leva o conteudo do meu repositorio local p remoto 
 o -u é necessário somente na 1°vez
 
