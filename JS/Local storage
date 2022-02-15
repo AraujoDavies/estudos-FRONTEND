@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 1px;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1> localStorage fica armazenado no pc do Usuário: </h1>
+
+    <ul>
+        <li>localStorage.setItem("nome", "fulano") </li>
+        <li>localStorage.nome = "Fulano" </li> <br>
+        <li>localStorage.getItem("nome")</li>
+        <li>localStorage.nome</li> <br>
+        <li>localStorage.removeItem("nome")</li>
+    </ul>
+  
+    <span> sessionStorage é usada da mesma forma mostrada acima, porém ao atualizar a página ele reseta </span>
+    
+</body>
+</html>
