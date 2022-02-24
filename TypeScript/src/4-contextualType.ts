@@ -8,3 +8,4 @@ names.forEach( (name)=>{
         console.log(name); //name = number
     }
 })
+//remova as validações para entender;
