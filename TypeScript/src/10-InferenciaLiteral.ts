@@ -13,6 +13,6 @@ let obj: requestDetails = {
     method: 'POST'
 }
 
-obj.method = 'Guet'
+obj.method = 'Guet'//ERROR 
 
 fazerReq(obj.url, obj.method);
