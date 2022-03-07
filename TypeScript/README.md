@@ -1,7 +1,7 @@
 pasta public:
     arquivos que são exibidos de fato no site
 
-pasta src:
+pasta src(SOURCE):
     código fonte por trás do código exibido
 
 comandos para compilar o TS:
