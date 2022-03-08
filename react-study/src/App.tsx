@@ -6,6 +6,8 @@ import { Contador } from './components/contador';
 import { InputArea } from './components/input';
 import { Exercise } from './components/exercicio';
 import { Comms } from './components/comunicacao';
+import { List } from './components/renderList';
+import { Condicionais } from './components/renderCondicionais';
 
 function App() {
   const btnEvent = ()=>{
@@ -32,6 +34,10 @@ function App() {
       <h3>Exercício Forms</h3>
       <Exercise />
       <Comms text="Clica ai doidin" clickFn={btnEvent}/>
+      <hr/>
+      <List  />
+      <hr/>
+      <Condicionais />
     </div>
   );
 }
