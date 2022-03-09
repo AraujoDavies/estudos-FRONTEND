@@ -1,0 +1,18 @@
+.stbotao {
+    background-color: brown;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 2px;
+}
+
+.stsquare{
+    background-color: aquamarine;
+    margin: 10px;
+}
+
+.stlegend{
+    color: green;
+}

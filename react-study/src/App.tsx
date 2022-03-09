@@ -1,13 +1,15 @@
-import { Header } from './components/header';
-import { Photo } from './components/photo';
-import { ClickEvent } from './components/clickEvent';
-import { State } from './components/state';
-import { Contador } from './components/contador';
-import { InputArea } from './components/input';
-import { Exercise } from './components/exercicio';
-import { Comms } from './components/comunicacao';
-import { List } from './components/renderList';
-import { Condicionais } from './components/renderCondicionais';
+import { Header } from './components/states_e_events/header';
+import { Photo } from './components/states_e_events/photo';
+import { ClickEvent } from './components/states_e_events/clickEvent';
+import { State } from './components/states_e_events/state';
+import { Contador } from './components/states_e_events/contador';
+import { InputArea } from './components/states_e_events/input';
+import { Exercise } from './components/states_e_events/exercicio';
+import { Comms } from './components/states_e_events/comunicacao';
+import { List } from './components/states_e_events/renderList';
+import { Condicionais } from './components/states_e_events/renderCondicionais';
+import { Btnstylesheet } from './components/Usando_stylesheet';
+import { Btnmodules } from './components/Usando_cssmodules'
 
 function App() {
   const btnEvent = ()=>{
@@ -38,6 +40,10 @@ function App() {
       <List  />
       <hr/>
       <Condicionais />
+      <hr/>
+      <Btnstylesheet />
+      <hr/>
+      <Btnmodules />
     </div>
   );
 }

@@ -6,3 +6,8 @@ criando projeto com Vite:
 
 criando com CRA:
 ...
+
+instalando Styled-Components:
+'npm install styled-components'
+instalando types por ser TS
+'npm install -D @types/styled-components'
