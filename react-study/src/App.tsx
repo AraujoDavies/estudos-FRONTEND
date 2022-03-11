@@ -11,6 +11,7 @@ import { Condicionais } from './components/states_e_events/renderCondicionais';
 import { Btnstylesheet } from './components/Usando_stylesheet';
 import { Btnmodules } from './components/Usando_cssmodules'
 import * as C from './Appstyle'
+import { Tailwindtest } from './components/tailwindcss'
 
 function App() {
   const btnEvent = ()=>{
@@ -52,6 +53,8 @@ function App() {
         <C.Botao bg='#00F'>Clique</C.Botao>
         <C.Botao bg='#F00' small>Clique small</C.Botao>
       </C.Container>
+      <hr/>
+      <Tailwindtest />
     </div>
   );
 }
