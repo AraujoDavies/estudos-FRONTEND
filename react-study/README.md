@@ -6,6 +6,7 @@ criando projeto com Vite:
 
 criando com CRA:
 -npx create-react-app nomedoprojeto --template typescript
+-npm start
 
 instalando Styled-Components:
 'npm install styled-components'
