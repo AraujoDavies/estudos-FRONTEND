@@ -17,7 +17,21 @@ export const PeopleList = () => {
                     name: inputName
                 }
             });
+            setInputName('')
         }
+    }
+
+    const handleDelItem = (id: string) => {
+        dispatch({
+            type: "DEL",
+            payload: { id }
+        })
+    }
+
+    const handleOrderItens = () => {
+        dispatch({
+            type: "ORDER"
+        })
     }
 
     return( 
@@ -29,9 +43,12 @@ export const PeopleList = () => {
 
                 <br/>
                 <h2>Lista de pessoas</h2>
+                
+                <button onClick={handleOrderItens}> [Ordenar] </button>
+                <br/>
                 <ul>
                     {list.map((item, index)=>( 
-                        <li key={index}> {item.name} </li>
+                        <li key={index}> {item.name} <button onClick={() => handleDelItem(item.id)}> [DEL] </button></li> 
                     ))}
                 </ul>
             </div>

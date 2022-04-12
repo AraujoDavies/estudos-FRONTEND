@@ -17,3 +17,6 @@ OBS: instalar TailwindCSS (ver documentação)
 
 Ao instalar o projeto em um novo computador, ele não terá a pasta node_modules...
 Para criá-la 'npm install' :D
+
+instalando router:
+'npm install react-router-dom'
