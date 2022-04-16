@@ -9,7 +9,7 @@ export const Home = () => {
         <div className='py-5'>
             <p><strong>Oi, seja bem vindo a pagina inicial </strong></p>
             Rotas criadas:
-            <ul>
+            <ul className='border-dashed border-2 border-indigo-600'> 
                 <li><Link to='/sobre'>sobre mim</Link></li>
                 <li><Link to='/sobre/programacao'>sobre programaçao</Link></li>
                 <li><Link to='/sobre/sonhos'>Sonhos...</Link></li>

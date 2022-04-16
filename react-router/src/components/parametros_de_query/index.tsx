@@ -1,8 +1,7 @@
 // como pegar parametros da URL que sejam filtrados diferentemente 
 // do useParams que pega tudo q for definido
-import { Routes, Route } from "react-router-dom";
-import { PagePdeQuery } from "../../pages/parametros_de_query";
-import { PagePdeQueryDefault } from "../../pages/parametros_de_query/padrao";
+
+import { Pde_queryOrg } from './../../routes/pd_query';
 
 export const PdeQuery = () => {
     return(
@@ -12,10 +11,7 @@ export const PdeQuery = () => {
                 <label className="text-xs text-slate-300"> Ex de URL: parametrosdequery?filter=x&order=y </label>
             </div>
             
-            <Routes>
-                <Route path='parametrosdequery' element={<PagePdeQuery />}></Route>
-                <Route path='*' element={<PagePdeQueryDefault />} ></Route>
-            </Routes>
+            <Pde_queryOrg />
         </div>
     );
 }
