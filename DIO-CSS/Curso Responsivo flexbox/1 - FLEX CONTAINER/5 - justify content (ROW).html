@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos || Justify Content</title>
+    <!-- NÃO FUNCIONA SE A DIV ESTIVER OCUPANDO 100%-->
+    <style>
+        body {
+            background-color: red;
+        }
+        .container {
+            display: flex;
+            border: 1px solid gray;
+            width: 80%;
+            background-color: rgb(241, 237, 2);
+        }    
+        .item{
+            background-color: darkblue;
+            color: yellow;
+            margin: 4px;
+            padding: 3px;
+        }
+
+        .maiuscula {
+            text-transform: uppercase;
+        }
+
+        .flex-start {
+            justify-content: flex-start; /* Alinha o item no inicio(nesse caso, a esquerda) */
+        }
+
+        .flex-end {
+            justify-content:flex-end;
+        }
+
+        .center {
+            justify-content: center;
+        }
+
+        .space-between {
+            justify-content: space-between;
+        }
+        .space-around {
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <h3 class="maiuscula">flex-start</h3> <!-- CADA CLASSE ALINHA OS ITENS DE UMA MANEIRA-->
+    <div class="container flex-start">
+    <div class="item">1°opção</div>
+    <div class="item">item 2</div>
+    <div class="item">terceiro..</div>
+    </div>
+
+    <h3 class="maiuscula">flex-end</h3>
+    <div class="container flex-end">
+    <div class="item">1°opção</div>
+    <div class="item">item 2</div>
+    <div class="item">terceiro..</div>
+    </div>
+
+    <h3 class="maiuscula">flex-end</h3>
+    <div class="container center">
+    <div class="item">1°opção</div>
+    <div class="item">item 2</div>
+    <div class="item">terceiro..</div>
+    </div>
+
+    <h3 class="maiuscula">flex-between</h3>
+    <div class="container space-between">
+    <div class="item">1°opção</div>
+    <div class="item">item 2</div>
+    <div class="item">terceiro..</div>
+    </div>
+
+    <h3 class="maiuscula">flex-around</h3>
+    <div class="container space-around">
+    <div class="item">1°opção</div>
+    <div class="item">item 2</div>
+    <div class="item">terceiro..</div>
+    </div>
+    
+</body>
+</html>

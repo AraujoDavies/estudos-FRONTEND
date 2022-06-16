@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify content 2</title>
+    <style>
+        .container{
+            display: flex;
+            border: 3px black solid;
+            height: 200px;
+            flex-flow: column;
+        }
+
+        .item {
+            background-color: red;
+            color: white;
+            margin: 3px;
+            padding: 1px;
+            font-size: 20px;
+        }
+
+        .m {
+            text-transform: uppercase;
+            text-decoration-line: underline;
+        }
+
+        .flex-start{
+            justify-content: flex-start;
+        }
+
+        .flex-end{
+            justify-content: flex-end;
+        }
+
+        .center{
+            justify-content: center;
+        }
+
+        .space-btw{
+            justify-content: space-between;
+        }
+
+        .space-around {
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="m">flex start</h2>
+    <div class="container flex-start">
+        <div class="item">item 1</div>
+        <div class="item">2 </div>
+        <div class="item">3°opção</div>
+        <div class="item">fim</div>
+    </div>
+    
+    <h2 class="m">flex end</h2>
+    <div class="container flex-end">
+        <div class="item">item 1</div>
+        <div class="item">2 </div>
+        <div class="item">3°opção</div>
+        <div class="item">fim</div>
+    </div>
+
+    <h2 class="m">Center</h2>
+    <div class="container center">
+        <div class="item">item 1</div>
+        <div class="item">2 </div>
+        <div class="item">3°opção</div>
+        <div class="item">fim</div>
+    </div>
+
+    <h2 class="m">space-between</h2>
+    <div class="container space-btw">
+        <div class="item">item 1</div>
+        <div class="item">2 </div>
+        <div class="item">3°opção</div>
+        <div class="item">fim</div>
+    </div>
+
+    <h2 class="m">space-around</h2>
+    <div class="container space-around">
+        <div class="item">item 1</div>
+        <div class="item">2 </div>
+        <div class="item">3°opção</div>
+        <div class="item">fim</div>
+    </div>
+</body>
+</html>

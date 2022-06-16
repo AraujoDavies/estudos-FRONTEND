@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos | Align-self</title>
+
+    <style>
+        .container{
+            max-width: 550px;
+            border: 2px solid black;
+            display: flex;
+            margin-bottom: 10px;
+            
+        }
+
+        .item{
+            background-color: brown;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+    
+        }
+
+        .alignItems{
+            align-items: center;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .start{
+            align-self: flex-start;
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .strecth{
+            align-self: stretch; /*comportamento padrão*/
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+        .direction{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h2>Row</h2>
+    <section class="container">
+        <div class="item start">A</div>
+        <div class="item">Bdasdsaddsadsadsadds adddsadsa  dsads sadsadsads dsadsadsa sadasdsadsa</div>
+        <div class="item center">C</div>
+        <div class="item end">D</div>
+        <div class="item baseline">dsadsa</div>
+        <div class="item strecth"> padrão</div>
+    </section>
+
+    <section class="container alignItems">
+        <div class="item auto">dads </div>
+        <div class="item auto">dadsa</div>
+        <div class="item auto">dadBdasdsaddsadsadsadds adddsadsa  dsads sadsadsads </div>
+        <div class="item auto">dsadsasd</div>
+    </section>
+
+    <h2>Column</h2>
+    <section class="container direction">
+        <div class="item start">A</div>
+        <div class="item">Bdasdsaddsadsadsadds adddsadsa  dsads sadsadsads dsadsadsa sadasdsadsa</div>
+        <div class="item center">C</div>
+        <div class="item end">D</div>
+        <div class="item baseline">dsadsa</div>
+        <div class="item strecth"> padrão</div>
+    </section>
+
+    <section class="container alignItems direction">
+        <div class="item auto">dads </div>
+        <div class="item auto">dadsa</div>
+        <div class="item auto">dadBdasdsaddsadsadsadds adddsadsa  dsads sadsadsads </div>
+        <div class="item auto">dsadsasd</div>
+    </section>
+</body>
+</html>

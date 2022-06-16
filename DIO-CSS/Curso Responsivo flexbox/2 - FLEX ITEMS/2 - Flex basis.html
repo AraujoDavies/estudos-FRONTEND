@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title> Fundamentos | Flex basis </title>
+    <style>
+        .flex-container{
+            max-width: 300px;
+            border: 1px solid black;
+            display:flex;
+            }
+        
+        .items{
+            background-color: orange;
+            text-transform: uppercase;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .bauto{
+            flex-basis: auto; 
+/*mantém os espaços internos msm ao "forçar" o elemento */
+        }
+
+        .basis-0{
+            flex-basis: 0;
+        }
+
+        .basis-w{
+            flex-basis: 100px;
+        }
+
+        .fg-0{
+            flex-grow: 0;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+
+        .fg-2{
+            flex-grow: 2;
+        }
+
+        
+    </style>
+<body>
+    <p> Basis Auto</p>
+    <div class="flex-container">
+        <div class="items bauto fg-1">Aaaaaaaaa</div>
+        <!--o elemento mantém uma espaçamento interno ao ser "forçado"-->
+        <div class="items bauto fg-1">BBB</div>
+        <div class="items bauto fg-1">c</div>
+        <div class="items bauto fg-1">DEF</div>
+    </div>
+
+    <p> Basis 0</p>
+    <div class="flex-container">
+        <div class="items basis-0 fg-1">Aaaaaaaaa</div>
+        <!--o elemento NÃO mantém uma espaçamento interno ao ser "forçado"-->
+        <div class="items basis-0 fg-1">BBB</div>
+        <div class="items basis-0 fg-1">c</div>
+        <div class="items basis-0 fg-1">DEF</div>
+    </div>
+
+    <p> Basis com width</p>
+    <div class="flex-container">
+        <div class="items basis-w fg-2">Aaaaa</div>
+        <div class="items basis-w fg-1">BBB</div>
+        <div class="items basis-w fg-1">c</div>
+        <div class="items basis-w fg-1">DEF</div>
+    </div>
+</body>
+</html>

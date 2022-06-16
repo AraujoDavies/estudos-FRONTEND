@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos | Flex Shrink</title>
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 400px;
+        }
+
+        .item{
+            background-color: orangered;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 3px;
+            font-size: 24px;
+        }
+
+        .fs{
+            flex-shrink: 1; /*VI REVI E NÃO ENTENDI!!!!! */  /* 0, 1 ,2, n*/ 
+            
+        }
+
+        .fg{
+            flex-grow: 1; /* 0, 1 ,2, n*/ 
+        }
+
+        .fb{
+            flex-basis: 0; /*pode ser Auto, px, 1, etc. */ 
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> <!-- faz uma DIV só e vai alterando os valores na tag Style-->
+        <div class="item fs fg">dsdsadsa</div>
+        <div class="item fs fg">b</div>
+        <div class="item fs fg">cdsdsadsadsds</div>
+        <div class="item fs fg">asdsa</div>
+        <div class="item fs fg">e</div>
+    </div>
+</body>
+</html>

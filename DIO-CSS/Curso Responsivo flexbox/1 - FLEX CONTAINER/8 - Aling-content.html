@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos | Align Content</title>
+    <style>
+        .container{
+            height: 400px;
+            max-width: 350px;
+            display: flex;
+            flex-wrap: wrap; /*tem q estar em display flex e wrap PARA FUNCIONAR */ 
+            border: 2px solid black;
+    }
+    .item{
+        background-color: chartreuse;
+        padding: 0 5px;
+        margin: 5px;
+        flex: 1; /* próxima aula */
+        text-align: center;
+
+        color: black;
+    }
+    /* as classes abaixos sao do align-content ela é responsavel pelas LINHAS e colocar no container*/
+    .stretch{
+        align-content: stretch; /*COMPORTAMENTO PADRÃO*/ 
+    }
+
+    .flex-start{
+        align-content: flex-start;
+    }
+
+    .flex-end{
+        align-content: flex-end;
+    }
+
+    .space-around{
+        align-content: space-around;
+/*Espaçamento quase igualitario por causa das bordas*/
+    }
+
+    .space-between{
+        align-content: space-between; /*ESPAÇO IGUALITÁRIO */
+    }
+    /* ateção ao display FLEX e ao WRAP */
+    </style>
+</head>
+<body>
+    <p>Stretch</p>
+    <div class="container stretch">
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+    </div>
+
+    <p>Space around</p>
+    <div class="container space-around">
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+    </div>
+
+    <p>Space Between</p>
+    <div class="container space-between">
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+    </div>
+</body>
+</html>

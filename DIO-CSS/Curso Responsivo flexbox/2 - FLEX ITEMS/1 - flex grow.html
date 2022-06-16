@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos | Flex Grow</title>
+    <style>
+        .container{
+            display: flex;
+            max-width: 300px;
+            border: solid black 2px;
+            justify-content: center;
+        }
+
+        .item{
+            background-color: orange;
+            margin: 2px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .fg-0{
+            flex-grow: 0;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+
+        .fg-2{
+            flex-grow: 2;
+        }
+
+        .fg-3{
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <p>Flex-Grow: 0</p>
+    <div class="container">
+        <div class="item fg-0">Aa</div> <!--JUSTIFY CONTENT não altera o flex grow-->
+        <div class="item fg-0">bb</div>
+        <div class="item fg-0">cc</div>
+        <div class="item fg-0">dd</div>
+    </div>
+    
+    <p>Flex-Grow: 1</p>
+    <div class="container">
+        <div class="item fg-1">Aa</div>
+        <div class="item fg-1">bb</div>
+        <div class="item fg-1">cc</div>
+        <div class="item fg-1">dd</div>
+    </div>
+
+    <p>Flex-Grow: 2</p>
+    <div class="container">
+        <div class="item fg-2">Aa</div> <!-- nesse caso e no caso acima da o mesmo resultado, got it? -->
+        <div class="item fg-2">bb</div>
+        <div class="item fg-2">cc</div>
+        <div class="item fg-2">dd</div>
+    </div>
+
+    <p>Flex-Grow: ALTERNADOS</p>
+    <div class="container">
+        <div class="item fg-1">Aa</div> 
+        <div class="item fg-2">bb</div> <!-- É DUAS VEZES MAIOR DOQ O FG-1 -->
+        <div class="item fg-0">cc</div> <!--OS LADOS AO REDOR DO ICONE É 0 -->
+        <div class="item fg-2">dd</div>
+    </div>
+
+
+
+</body>
+</html>

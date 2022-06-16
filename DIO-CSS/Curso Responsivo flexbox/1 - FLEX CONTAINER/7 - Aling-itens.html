@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aling Items | Flex Box</title>
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 350px;
+        }
+
+        .item{
+            text-align: center;
+            background-color: blueviolet;
+            color: wheat;
+            margin: 5px;
+            flex: 1; /* Flex Grow - proximas aulas*/
+        }
+
+        .center {
+            align-items: center; /* joga tudo pro centro do container */ 
+        }
+
+        .stretch{
+            align-items: stretch;   /* comportamento padrao*/
+        }
+
+        .flex-start{
+            align-items: flex-start; /* joga pro inicio*/
+        }
+
+        .flex-end{
+            align-items: flex-end; /* joga pro fim */
+        }
+
+        .baseline {
+            align-items: baseline; 
+            /*PELO Q ENTENDI... alinha os textos de todos os itens*/
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .central{  /*como deixar um unico item centralizado respeitando os espaços */
+            height: 500px;
+            justify-content: center
+        }
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <p>center</p>
+    <section class="container center">
+        <div class="item">texto 1</div>
+        <div class="item">texto 2 um pouco maiorzinho</div>
+        <div class="item">texto 3 bem maiorzao pra ver a diferença de cada item pq o bagui é loko e a parada é tensa</div>
+    </section>
+    
+    <p>stretch</p>
+    <section class="container stretch central">
+        <div class="item">texto 1</div>
+        <div class="item">texto 2 um pouco maiorzinho</div>
+        <div class="item">texto 3 bem masiorzao pra ver a diferença de cada item pq o bagui é loko e a parada é tensa e o processo é lento</div>
+    </section>
+
+    <p>Flex-Start</p>
+    <section class="container flex-start">
+        <div class="item">texto 1</div>
+        <div class="item">texto 2 um pouco maiorzinho</div>
+        <div class="item">texto 3 bem maiorzao pra ver a diferença de cada item pq o bagui é loko e a parada é tensa</div>
+    </section>
+
+    
+    <p>Flex-End</p>
+    <section class="container flex-end">
+        <div class="item">texto 1</div>
+        <div class="item">texto 2 um pouco maiorzinho</div>
+        <div class="item">texto 3 bem maiorzao pra ver a diferença de cada item pq o bagui é loko e a parada é tensa</div>
+    </section>
+
+    <p>Baseline</p>
+    <section class="container baseline">
+        <div class="item"><br><br>texto 1</div>
+        <div class="item">texto 2 um pouco maiorzinho</div>
+        <div class="item">texto 3 bem maiorzao pra ver a diferença de cada item pq o bagui é loko e a parada é tensa</div>
+    </section>
+
+    <h1>Column</h1>
+    <p>center</p>
+    <section class="container center column ">
+        <div class="item">texto 1</div>
+        <div class="item">texto 2 um pouco maiorzinho</div>
+        <div class="item">texto 3 bem maiorzao pra ver a diferença de cada item pq o bagui é loko e a parada é tensa</div>
+    </section>
+    
+    <p>stretch</p>
+    <section class="container column stretch">
+        <div class="item">texto 1</div>
+        <div class="item">texto 2 um pouco maiorzinho</div>
+        <div class="item">texto 3 bem maiorzao pra ver a diferença de cada item pq o bagui é loko e a parada é tensa</div>
+    </section>
+
+    <p>Flex-Start</p>
+    <section class="container flex-start column">
+        <div class="item">texto 1</div>
+        <div class="item">texto 2 um pouco maiorzinho</div>
+        <div class="item">texto 3 bem maiorzao pra ver a diferença de cada item pq o bagui é loko e a parada é tensa</div>
+    </section>
+
+    
+    <p>Flex-End</p>
+    <section class="container flex-end column">
+        <div class="item">texto 1</div>
+        <div class="item">texto 2 um pouco maiorzinho</div>
+        <div class="item">texto 3 bem maiorzao pra ver a diferença de cada item pq o bagui é loko e a parada é tensa</div>
+    </section>
+
+    <p>Baseline</p>
+    <section class="container baseline column">
+        <div class="item"><br><br>texto 1</div>
+        <div class="item">texto 2 um pouco maiorzinho</div>
+        <div class="item">texto 3 bem maiorzao pra ver a diferença de cada item pq o bagui é loko e a parada é tensa</div>
+    </section>
+
+    <h1>alinhamento central</h1>
+    <section class="container center central">
+        <div class="item">texto texto 1texto 1texto 1texto 1texto 1texto 1texto 1stexto 1texto 1texto 1texto 1texto 1texto 1texto 11</div>
+    </section>
+</body>
+</html>
