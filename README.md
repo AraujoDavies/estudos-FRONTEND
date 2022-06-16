@@ -16,8 +16,7 @@ git log -n 2                            -> mostra os 2 ultimos logs
 git log --oneline                       -> hash + mensagem
 git log -p                              -> mostra as alterações de cada commit
 git log --graph                         -> mostra as linhas das ramificações
-git log cheats
-https://devhints.io/git-log
+git log cheats: https://devhints.io/git-log
 git add -A ou . ou nome do arquivos     -> coloca todos os arquivos novos no git q começa a observá-los
 git commit -m "descrição da alteração"  -> adiciona os arquivos ao git e faz o registro
 ***NUNCA COMMITAR CÓDIGO QUE NÃO FUNCIONA***
